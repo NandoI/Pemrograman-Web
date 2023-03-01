@@ -1,0 +1,145 @@
+@import url('http://font.googleapis.com/css/family=Quicksand:400,500&subser=latin-ext');
+
+body {
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: normal;
+  width: 1280px;
+  height: 760px;
+  background-image: linear-gradient(50deg,#ffff,#000); 
+}
+
+.main{
+    width: 800px;
+    height: 520px;
+    margin: 0 auto;
+}
+
+.b {
+  position: absolute;
+  font-size: 170px;
+  left: -20px;
+  top: -40px;
+  color: black;
+  align-self: auto;
+  text-align: left;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.to {
+  position: absolute;
+  font-size: 170px;
+  left: -20px;
+  top:135px;
+  color: black;
+  align-self: auto;
+  text-align: left;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.gr {
+  position: absolute;
+  font-size: 170px;
+  left: -80px;
+  top: 305px;
+  color: black;
+  align-self: auto;
+  text-align: left;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.fish {
+  position: absolute;
+  font-size: 170px;
+  left: -60px;
+  top: 480px;
+  color: black;
+  align-self: auto;
+  text-align: left;
+  line-height: normal;
+  font-stretch: normal;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+hr {
+  position: relative;
+  top: 30%;
+  left: 17%;
+  width: 520px;
+}
+
+ul {
+  margin-left: -45px;
+}
+
+li {
+  position: relative;
+  top: 400px;
+  left: 520px;
+  list-style: none;
+  display: inline-block;
+  font-size: 30px;
+}
+
+.welcome {
+  position: relative;
+  top: 30%;
+  left: 51.5%;
+  color: #FFFFFF;
+}
+
+.website {
+  position: relative;
+  top: 28%;
+  left: 59%;
+  font-style: bold;
+  color: #FFFFFF;
+}
+
+.biografi{
+  position: relative;
+  top:28%;
+  left:57.5%;
+  font-size: 40px;
+}
+
+p {
+  position: absolute;
+  top: 60%;
+  left: 35%;
+  width: 550px;
+  height: 600px;
+}
+
+.main2 {
+  position: absolute;
+  right: 0px;
+  bottom: 4px;
+  width: 300px;
+  height: 400px;
+  background-color: gray;
+  margin: 0;
+  padding-top: 20px;
+  border-radius: 10px;
+  border:1px solid;
+}
+
+.foto {
+  position: absolute;
+  right: 0px;
+  width: 250px;
+  bottom: 4px;
+  height: 250px;
+  border-color: transparent;
+  border-radius: 10px;
+}
