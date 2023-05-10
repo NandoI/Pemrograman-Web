@@ -1,26 +1,30 @@
 <?php 
 include('conn.php');
-//cek tombol submit
-if (isset($_POST["submit"])){
 
+$status = '';
+$result = '';
+
+if (isset($_POST["submit"])){
     $id_driver = $_POST['id_driver'];
 
-    $query1 = "DELETE FROM trans_upn WHERE id_driver = $id_driver";
+    $query1 = "DELETE FROM trans_upn WHERE id_driver = :id_driver";
+    $qry1 = $conn->prepare($query1);
+    $qry1->bindParam(':id_driver', $id_driver);
 
-    if(mysqli_query($conn, $query1)){
-        $query2 =  "DELETE FROM driver WHERE id_driver = $id_driver";
-        if (mysqli_query($conn,$query2)){
-            echo "<script> alert('Data berhasil dihapus')</script>";
-            header("refresh:0;customers.php");
+    if($qry1->execute()){
+        $query2 =  "DELETE FROM driver WHERE id_driver = :id_driver";
+        $qry2 = $conn->prepare($query2);
+        $qry2->bindParam(':id_driver', $id_driver);
+
+        if ($qry2->execute()){
+            $status = 'ok';
         } else {
-            echo "<script> alert('Data tidak terhapus')</script>";
+            $status = 'err';
         }
     }
 } else {
     echo "Data gagal dihapus dari tabel transUPN";
 }
-
-
 ?>
 
 <!DOCTYPE html>

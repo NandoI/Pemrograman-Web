@@ -1,27 +1,31 @@
 <?php 
 include('conn.php');
-//cek tombol submit
+
+$status = '';
+
 if (isset($_POST["submit"])){
+    $id_driver = $_POST['id_driver'];
+    $nama = $_POST['nama'];
+    $no_sim = $_POST['no_sim'];
+    $alamat = $_POST['alamat'];
 
-    $simpan = mysqli_query($conn," insert into driver set
+    $sql = "INSERT INTO driver (id_driver, nama, no_sim, alamat) VALUES (:id_driver, :nama, :no_sim, :alamat)";
+    $query = $conn->prepare($sql);
 
-    id_driver = '$_POST[id_driver]',
-    nama = '$_POST[nama]',
-    no_sim = '$_POST[no_sim]',
-    alamat = '$_POST[alamat]'");
+    $query->bindParam(':id_driver', $id_driver);
+    $query->bindParam(':nama', $nama);
+    $query->bindParam(':no_sim', $no_sim);
+    $query->bindParam(':alamat', $alamat);
 
-    if ($simpan){
-        echo "<script> alert('Data berhasil disimpan')</script>";
+    if ($query->execute()){
+        $status = 'ok';
         header("refresh:0;customers.php");
     } else {
-        echo "<script> alert('Data tidak tersimpan')</script>";
+        $status = 'error';
     }
 
 }
-
-
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
