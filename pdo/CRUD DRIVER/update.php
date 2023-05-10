@@ -1,6 +1,8 @@
 <?php 
 include('conn.php');
-//cek tombol submit
+
+$status = '';
+
 if (isset($_POST["submit"])){
 
     $id_driver = $_POST['id_driver'];
@@ -8,20 +10,20 @@ if (isset($_POST["submit"])){
     $no_sim = $_POST['no_sim'];
     $alamat = $_POST['alamat'];
 
-    $sql = "UPDATE driver SET nama='$nama', no_sim='$no_sim', alamat='$alamat' WHERE id_driver='$id_driver'";
-    $result = mysqli_query($conn, $sql);
+    $sql = $conn->prepare("UPDATE driver SET nama= :nama, no_sim= :no_sim, alamat=:alamat WHERE id_driver=:id_driver");
+    $sql->bindParam(':id_driver',$id_driver);
+    $sql->bindParam(":nama", $nama);
+    $sql->bindParam(":no_sim", $no_sim);
+    $sql->bindParam(":alamat", $alamat);
 
 
-    if ($result){
-        echo "<script> alert('Data berhasil diupdate')</script>";
+    if ($sql->execute()){
+        $status = 'ok';
         header("refresh:0;customers.php");
     } else {
-        echo "<script> alert('Data tidak terupdate')</script>";
+        $status = 'error';
     }
-
 }
-
-
 ?>
 
 <!DOCTYPE html>

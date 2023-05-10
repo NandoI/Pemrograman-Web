@@ -4,15 +4,13 @@ $dbUser = "root";
 $dbPass = "nandopoi123";
 $dbName = "transupn";
 
-$conn = mysqli_connect($dbHost,$dbUser,$dbPass);
-if ($conn){
-    $buka = mysqli_select_db($conn,$dbName);
-    if (!$buka) {
-        echo "Database tidak dapat terhubung";
-    }
-}
-else {
-    echo "MySql Tidak Terhubung";
-}
+try {
+ $conn = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPass); 
 
+ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+ echo "koneksi berhasil";
+}
+catch(PDOException $err){
+    echo "Failed connec to database server: " . $err->getMessage();
+}
 ?>
