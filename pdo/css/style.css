@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    min-height: 100vh;
+    color: #fff;
+    background-color: rgb(20, 19, 19);
+}
+
+table{
+    text-align: center;
+    border: 2px solid #fff;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+tr th{
+    border: 2px solid #fff;
+}
+
+.pilihan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    padding: 1.4rem 4%;
+}
+
+.pilihan a{
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
