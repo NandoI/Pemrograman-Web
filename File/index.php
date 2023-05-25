@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pengisian</title>
+    <title>Buku</title>
 </head>
 <body>
-    <form action="create.php,coba.php" method="get">
-        id_buku: <input type="text" name="id"><br>
-        judul: <input type="text" name="judul"><br>
-        pengarang: <input type="text" name="pengarang"><br>
-        Tahun Terbit: <input type="text" name="Tahun"><br>
-        Jumlah Halaman: <input type="text" name="jumlah"><br>
-        Penerbit: <input type="text" name="penerbit"><br>
-        kategori: <input type="text" name="kategori"><br>
-        Cover: <input type="file" name="gambar"><br>
-        <input type="submit" value="uploud">
+    <h1>Pilih Aksi</h1>
+    <form action="indexcreate.php" method="get">
+        <input type="submit" value="create">
+    </form>
+    <form action="indexdek.php" method="get">
+        <input type="submit" value="delete">
+    </form>
+    <form action="indexup.php" method="get">
+        <input type="submit" value="update">
+    </form>
+    <form action="unggah.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="cover" id="cover">
+        <input type="submit" value="submit">
     </form>
     
 </body>

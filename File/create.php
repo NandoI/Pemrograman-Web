@@ -1,9 +1,9 @@
 <?php 
     if ($_GET) {
         //variable penampung 
-        $Buku = $_GET['id']."-".$_GET['judul']."-".$_GET['pengarang']."-".$_GET['Tahun']."-".$_GET['jumlah']."-".$_GET['penerbit']."-".$_GET['kategori']."-".$_GET['gambar']."\n";
+        $Buku = $_GET['id']."-".$_GET['judul']."-".$_GET['pengarang']."-".$_GET['Tahun']."-".$_GET['jumlah']."-".$_GET['penerbit']."-".$_GET['kategori']."\n";
         //simpan ke file
-        $file_name = "Daftar.txt";
+        $file_name = "./unggah/Daftar.txt";
         if(file_put_contents($file_name, $Buku, FILE_APPEND) !== false) {
             echo "Data berhasil disimpan";
         } else {

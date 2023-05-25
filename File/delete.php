@@ -1,16 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form action="cobadel.php" method="get">
-        <input type="text" name="delete" placeholder="ID Buku">
-        <input type="submit" value="delete">
-    </form>
-    
-</body>
-</html>
+<?php
+if ($_GET) {
+    $id_buku = $_GET['id'];
+
+    // Baca data dari file
+    $file_name = "./unggah/Daftar.txt";
+    $data = file($file_name);
+
+    // Cari data yang sesuai dengan ID buku
+    $deleted = false;
+    foreach ($data as $index => $line) {
+        $fields = explode("-", $line);
+        if ($fields[0] == $id_buku) {
+            unset($data[$index]); // Hapus data dari array
+            $deleted = true;
+            break;
+        }
+    }
+
+    // Jika data berhasil dihapus, tulis kembali data ke file
+    if ($deleted && file_put_contents($file_name, implode("", $data))) {
+        echo "Data berhasil dihapus.";
+    } else {
+        echo "Gagal menghapus data.";
+    }
+
+    echo '<br><br><a href="index.php">Kembali</a>';
+    echo '<br><br><a href="read.php">untuk melihat data</a>';
+}
