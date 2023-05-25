@@ -1,7 +1,7 @@
 <?php
 
     echo "<h3>Buku</h3>";
-    $file_nam = "Daftar.txt";
+    $file_nam = "./unggah/Daftar.txt";
 
     $read = file($file_nam);
 
@@ -15,7 +15,6 @@ echo
             <td>jumlah</td>
             <td>penerbit</td>
             <td>kategori</td>
-            <td>gambar</td>
         </tr>";
 
         foreach ($read as $mhs) {
@@ -28,7 +27,6 @@ echo
             echo "<td>$data_mhs[4]</td>";
             echo "<td>$data_mhs[5]</td>";
             echo "<td>$data_mhs[6]</td>";
-            echo "<td>$data_mhs[7]</td>";
             echo "</tr>";
         }
     echo "</table>";
