@@ -291,11 +291,14 @@ main{
 }
 
 .kata{
+  padding: 3rem 0;
   position: absolute;
   justify-content: center;
   align-items: center;
   text-align: center;
   width: 100%;
+  height: 165vh;
+  background-color: #fdf0d5;
 }
 
 .kata .halatas{
@@ -363,6 +366,17 @@ main{
 
 .atas ul li{
   margin-left: 8rem;
+}
+
+.reveal{
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
 }
 
 
