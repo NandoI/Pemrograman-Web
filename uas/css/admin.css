@@ -1,0 +1,62 @@
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    color: #fff;
+    background-color: #fff;
+    font-family:'Poppins', sans-serif;
+    /* min-height: 20000px; */
+}
+
+.kontener{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 2%;
+    width: 100%;
+    height: 100vh;
+}
+
+.kotak {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f4d58d;
+    border-radius: 1.5rem;
+    width: 100%;
+    height: 100%;
+}
+
+.kotak .form h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.kotak .form h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}  
+
+.form span{
+    color: #52b788;
+}
+
+.form input{
+    width: 100%;
+    padding: 0.5rem 4%;
+}
+
+
