@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    background-color: rgba(0, 255, 255, 0.43);
+    justify-content: space-between;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px 55px;
+}
+
+nav h1{
+    margin-left: 30px;
+}
+
+nav a{
+    color: #000;
+}
+
+nav .poster{
+    margin-left: 1rem ;
+    font-size: 1rem;
+    color: #000;
+    font-weight: 100;
+}
+
+.square{
+    display: flex;
+    background-color: aqua;
+    width: 100vw;
+    height: 85vh;
+    right: auto;
+}
+
+.square1{
+    background-color:white;
+    margin-top: 50px;
+    margin-left: 40px;
+    border-radius: 30px;
+    width: 60vw;
+    height: 68vh;
+    text-align: justify;
+}
+
+.square1 h2{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.square1 h4{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.square1 li{
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
+.square1 p{
+    padding-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.square2{
+    background-color:white;
+    margin-top: 50px;
+    margin-left: 25px;
+    border-radius: 30px;
+    width: 33vw;
+    height: 68vh;
+}
+
+.square2 h3{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+td{
+    padding: 8px 8px;
+}
+
+td a{
+    color: #000;
+}
+
+table{
+    margin-left: 10px;
+}
+
+.subject-section {
+    text-align: center;
+    margin-top: 80px;
+    width: 100vw;
+    height: 60vh;
+    background-color: beige;
+  }
+  
+  .subject-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .subjects-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  .subjects-menu li {
+    margin: 0 10px;
+  }
+  
+  .subject-card {
+    background-color: #fff;
+    width: 200px;
+    height: 350px;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .subject-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .subject-card h3 {
+    font-size: 18px;
+    color: #333;
+  }

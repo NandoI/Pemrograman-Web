@@ -14,9 +14,11 @@ $checkEmailQuery = "SELECT * FROM signup WHERE email = '$email' AND password = '
 $checkEmailResult = mysqli_query($conn, $checkEmailQuery);
 
 if (mysqli_num_rows($checkEmailResult) > 0) {
-    echo "Login berhasil";
+    echo "<script> alert ('Login berhasil')</script>";
+    header ("refresh:0;/uas/indexloginn.html");
 } else {
-    echo "Email atau password tidak valid";
+    echo "<script> alert ('maaf password atau email anda salah')</script>";
+    header ("refresh:0;/uas/login_form.php");
 }
 
 $conn->close();

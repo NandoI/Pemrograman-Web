@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>Sign Up MyCourse</title>
     <link rel="stylesheet" href="./css/sign.css">
 </head>
 <body>
@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="kotak">
             <div class="lain-lain">
                 <div class="atas">
-                    <h2>MyCourse</h2>
+                    <a href="index.html"><h2>MyCourse</h2></a>
                     <div class="beda">
                         <h3>Ayo bergabung dengan</h3>
                         <h3>MyCourse</h3>

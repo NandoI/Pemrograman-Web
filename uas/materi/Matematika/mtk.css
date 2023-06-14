@@ -1,0 +1,165 @@
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: burlywood;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+nav{
+    display: flex;
+    background-color: #ffffff6b;
+    justify-content: space-between;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px 55px;
+}
+
+nav h1{
+    margin-left: 30px;
+}
+
+nav a{
+    color: #000;
+}
+
+nav .poster{
+    margin-left: 1rem ;
+    font-size: 1rem;
+    color: #000;
+    font-weight: 100;
+}
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .logo img {
+    max-height: 50px;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu li {
+    margin-left: 20px;
+  }
+  
+  .menu li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .menu li a:hover {
+    color: #ff3366;
+  }
+  
+  main {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 30px;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .welcome-section {
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .welcome-content {
+    color: #fff;
+    text-align: center;
+  }
+  
+  .welcome-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .welcome-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .subject-section {
+    text-align: center;
+  }
+  
+  .subject-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .subjects-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  .subject-card i{
+    color: black;
+  }
+  
+  .subjects-menu li {
+    margin: 0 10px;
+  }
+  
+  .subject-card {
+    background-color: #fff;
+    width: 200px;
+    height: 250px;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .subject-card img {
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .subject-card h3 {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  footer {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+  }
+  

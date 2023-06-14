@@ -20,7 +20,6 @@
                         <input type="submit" value="Login">
                     </ul>
                    </form>
-
                 </div>
         </div>
     </div>

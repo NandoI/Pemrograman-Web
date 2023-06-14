@@ -26,7 +26,8 @@ if ($password !== $repassword) {
         $stmt = $conn->prepare("INSERT INTO signup (email, password, repassword) VALUES (?, ?, ?)");
         $stmt->bind_param("sss", $email, $password, $repassword);
         if ($stmt->execute()) {
-            echo "Registrasi berhasil";
+            echo "<script> alert ('Login berhasil')</script>";
+             header ("refresh:0;/uas/login_form.php");
         } else {
             echo "Error: " . $stmt->error;
         }

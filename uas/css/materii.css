@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&family=Caveat&family=Cinzel&family=Kaushan+Script&family=Sedgwick+Ave+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,100&display=swap');
+
+
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    color: #fff;
+    background-color: #fff;
+    font-family:'Poppins', sans-serif;
+    /* min-height: 20000px; */
+}
+
+.container{
+    padding: 2.5% 5%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 110vh;
+}
+
+.kotak{
+    padding: 3rem 9%;
+    border-radius: 1.4rem;
+    background-color: #e07a5f;
+    height: 100%;
+}
+
+.kotak .navbar{
+    padding: 2rem 5%;
+    background-color: #fff;
+    border-radius: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .logo{
+    color: #000;
+}
+
+.navbar .extra{
+    display: flex;
+}
+
+.navbar .extra ul{
+    display: flex;
+}
+
+.navbar .extra ul li{
+    margin-left: 1rem;
+}
+
+.kotak .navbar .extra ul li a{
+    color: #000;
+    font-weight: 400;
+    display: block;
+    font-size: 1rem;
+}
+
+.home{
+    display: flex;
+    margin-top: 3.5rem;
+    height: 80%;
+}
+
+.judul h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.judul h2{
+    font-size: 3.5rem;
+    font-weight: 100;
+    font-family: 'Bona Nova', serif;
+}
+
+.judul p{
+    font-size: 1.2rem;
+    padding: 1.5rem 0;
+    margin-right: 10rem;
+}
+
+.home .img img{
+    height: 25rem;
+    width: 25rem;
+}
+
+.home ul{
+    padding: 1rem 0;
+    display: flex;
+}
+
+.home ul li{
+    background-color: #fff;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    padding: 0.7rem 5.5%;
+    margin-left: 1rem;
+}
+
+.home ul li a{
+    color: #e07a5f;
+    font-weight: 700;
+}
+
+.home ul .sign{
+    border: 2px #fff solid;
+    background-color: #e07a5f;
+}
+
+.home ul .sign a{
+    color: #fff;
+}
+
+.conteiner1{
+    border: 1px solid #fff;
+}
+
+section{
+    margin-bottom: 2rem;
+}
+
+.blok{
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+    margin-top: 2rem;
+    padding: 0 13%;
+    min-height: 50vh;
+
+}
+
+.blok .kontener-judul{
+    padding: 0.4rem 0;
+    background-color: #e07a5f;
+    color: #fff;
+    text-align: center;
+    border-radius: 1rem;
+    font-size: 0.5rem;
+    width: 50%;
+}
+
+.satu{
+    height: 100%;
+    padding: 2rem 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.satu .keterangan{
+    font-size: 2rem;
+}
+    
+.blok .kontener-deskripsi{
+    padding: 1.7rem 5%;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
+
+.form ul li {
+    padding: 0.5rem 5%;
+    margin-bottom: 1rem;
+    background-color: #e07a5f;
+    border-radius: 1.4rem;
+}
+
+.container2{
+    color: #000;    
+    text-align: center;
+    
+}
+
+.container2 ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25%;
+}
+
+.container2 a{
+    color: #fff;
+}
+
+.container2 ul li{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 1.4rem;
+    width: 7rem;
+    height: 7rem;
+}
+
+.container2 i{
+    color: #fff;
+    position: absolute;
+    font-size: 2rem;
+    opacity: 1; 
+    transition: opacity 0.3s ease;
+}
+
+.a{
+    background-color: #8E94F2;
+}
+
+.container2  p{
+    opacity: 0;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: opacity 0.3s ease;
+}
+
+.container2 ul li:hover p{
+    opacity: 1;
+}
+
+.container2 ul li:hover i{
+    opacity: 0;
+}
+
+.container2 h1{
+    font-weight: 600;
+    font-size: 3rem;
+    transition: opacity 0.3s ease;
+    color: #000;
+}
+
+.b{
+    background-color: #e07a5f;
+}
+
+.c{
+    background-color: #FF8FAB;
+}
+
+.d {
+    background-color: #52b788;
+}
+
+.e{
+    background-color: #f4d58d;
+}
+
+.kotak1{
+    padding: 1.4rem 5%;
+}
+.container3{
+    color: #222121;
+    padding: 1.4rem 5%;
+    text-align: center;
+    background-color: #fdf0d5;
+    border-radius: 1rem;
+}
+
+.kontener-judul2  h1{
+    font-size: 1rem;
+    color: #000;
+}
+
+.kontener-judul2 h2{
+    color: #000;
+}
+
+.kontener-judul2 h3{
+    color: #000;
+}
+
+.kotak-pilihan ul{
+    display: flex;
+    flex-direction: wrap;
+}
+
+.kotak-pilihan ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 1rem;
+    width: 100%;
+    background-color: #fff;
+    margin-left: 1rem;
+    padding: 5rem 5%;
+
+}
+
+.kotak-pilihan .traktir a{
+    color: #fff;
+}
+
+.kotak-pilihan .traktir{
+    background-color: #8E94F2;
+    color: #8E94F2;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 0.5rem 5%;
+    border-radius: 2rem;
+    transition: .3s;       
+}
+.traktir:hover{
+    background-color: #000;
+    border: 2px solid #222121;
+    cursor: pointer;
+    color: #000;
+}
+
+.blok3{
+    display: flex;
+    justify-content: space-between;
+    height: 50vh;
+    padding: 5rem 10%;
+    background-color: #03071e;
+    color: #CED4DA;
+  }
+
+  .uatas ul{
+    display: flex;
+  }
+  
+  .uatas ul li{
+    font-size: 1.5rem;
+    padding: 2rem 5%;
+    text-align: center;
+  }
+  
+  .uatas h3 {
+    font-size: 1.5rem;
+  }
+  
+  .atas{
+    padding: 0 10px 0 0;
+  }
+  
+  .atas h3{
+    font-size: 1.5rem;
+  }
+  
+  .atas ul li{
+    font-size: 1.5rem;
+    padding: 2rem 5%;
+    text-align: justify;
+  }
+
+  .iatas{
+    text-align: justify;
+  }
+  
+  .atas p {
+    text-align: justify;
+  }
+
+
+@media (max-width: 1200px) {
+    html{
+        font-size: 80%;
+    }
+}
+
+@media (max-width: 890px)  {
+    html{
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 320px) {
+    html{
+        font-size: 30%;
+    }
+}
